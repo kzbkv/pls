@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Notebook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="html" href="register.html">
+</head>
+<body>
+<h1>Notebook</h1>
+
+<!-- Form for adding a contact -->
+<form id="add-contact-form">
+    <input type="text" placeholder="Name" id="name" required>
+    <input type="text" placeholder="Email" id="email" required>
+    <input type="text" placeholder="Review" id="review" required>
+    <button type="button" onclick="addContact()">Add</button>
+    <a href="/Registration">Go to Second Page</a>
+</form>
+
+<!-- Table for displaying contacts -->
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Review</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="contact-list">
+    <!-- List of contacts will be displayed here -->
+    </tbody>
+</table>
+
+<!-- Script for handling PUT, POST, GET, DELETE operations -->
+<script src="scripts.js"></script>
+</body>
+</html>
